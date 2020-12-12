@@ -6,6 +6,8 @@ pipeline {
                             echo 'hello'
                             sh 'java -version'
                             sh 'mvn clean install'
+                            echo 'mvn output'
+                            sh 'ls -ltr'
                      }
               }
               stage('unit test') {
