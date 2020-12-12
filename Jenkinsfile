@@ -4,6 +4,8 @@ pipeline {
               stage('build') {
                      steps {
                             echo 'hello'
+                            sh 'java -version'
+                            sh 'mvn clean'
                      }
               }
               stage('unit test') {
