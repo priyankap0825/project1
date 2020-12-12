@@ -1,5 +1,5 @@
 pipeline {
-       stages{
-       stage("build"){}
+       stages {
+              stage('build') { }
        }
 }
