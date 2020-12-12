@@ -5,11 +5,13 @@ pipeline {
                      steps {
                             echo 'hello'
                             sh 'java -version'
+                            sh 'mvn clean install'
                      }
               }
               stage('unit test') {
                      steps {
                             echo 'hello1'
+                            sh 'mvn test'
                      }
               }
               stage('integration test') {
